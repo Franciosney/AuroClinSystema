@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="425" pageHeight="595" columnWidth="385" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="65fc7d4b-753e-48f8-8607-c472b9afa41e">
+	<property name="ireport.zoom" value="2.357947691000022"/>
+	<property name="ireport.x" value="32"/>
+	<property name="ireport.y" value="1134"/>
+	<field name="nome" class="java.lang.String"/>
+	<field name="servico" class="java.lang.String"/>
+	<field name="data" class="java.lang.String"/>
+	<field name="receituario" class="java.lang.String"/>
+	<field name="medico" class="java.lang.String"/>
+	<group name="receituario">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band height="555">
+				<image>
+					<reportElement x="1" y="0" width="384" height="94" uuid="2a9d5da6-8759-4830-a54c-d30d9c4e98b2"/>
+					<imageExpression><![CDATA["C:\\Users\\Franciosney Souza\\Desktop\\teste\\cabecalhoReceituario.jpg"]]></imageExpression>
+				</image>
+				<image>
+					<reportElement x="91" y="12" width="214" height="49" uuid="a2511738-ab87-46dc-916c-4a5de521d7cc"/>
+					<imageExpression><![CDATA["C:\\Users\\Franciosney Souza\\Desktop\\teste\\logoAuroClin.jpg"]]></imageExpression>
+				</image>
+				<line>
+					<reportElement x="1" y="78" width="384" height="1" forecolor="#00CCCC" uuid="9b89742f-7cec-45e5-8d0f-ee20d8ecc56a"/>
+				</line>
+				<staticText>
+					<reportElement x="160" y="87" width="70" height="16" forecolor="#00CCCC" uuid="c16626e4-1091-4d7c-a6c8-5b166b044977"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[Receituário]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement x="0" y="119" width="169" height="20" forecolor="#00CCCC" uuid="722ffc2f-7e0f-4ea7-85bc-9f522e342302"/>
+				</rectangle>
+				<rectangle>
+					<reportElement x="174" y="119" width="127" height="20" forecolor="#00CCCC" uuid="e193c300-561f-41df-ad6f-ee33f86f387c"/>
+				</rectangle>
+				<rectangle>
+					<reportElement x="305" y="119" width="80" height="20" forecolor="#00CCCC" uuid="5e1d7d5a-2e56-4518-b757-23513d17d679"/>
+				</rectangle>
+				<rectangle>
+					<reportElement x="1" y="145" width="384" height="284" forecolor="#00CCCC" uuid="5b07292f-a847-41c6-9570-262d2bf5421f"/>
+				</rectangle>
+				<rectangle>
+					<reportElement x="0" y="533" width="384" height="20" forecolor="#00CCCC" backcolor="#00CCCC" uuid="e861aa2b-41bc-4949-a404-8708e05debcb"/>
+				</rectangle>
+				<image>
+					<reportElement x="9" y="493" width="16" height="16" uuid="09589ee0-564b-4ca1-a344-13d13fcf1fd4"/>
+					<imageExpression><![CDATA["C:\\Users\\Franciosney Souza\\Desktop\\teste\\what.jpg"]]></imageExpression>
+				</image>
+				<image>
+					<reportElement x="17" y="509" width="16" height="14" uuid="057be5f2-5b75-41c6-8fec-37316e7b4138"/>
+					<imageExpression><![CDATA["C:\\Users\\Franciosney Souza\\Desktop\\teste\\images (1).jpg"]]></imageExpression>
+				</image>
+				<image>
+					<reportElement x="120" y="493" width="16" height="19" uuid="812acfd3-f40a-4263-b3c9-6a950df4c2db"/>
+					<imageExpression><![CDATA["C:\\Users\\Franciosney Souza\\Desktop\\teste\\images.jpg"]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement x="9" y="493" width="110" height="14" forecolor="#00CCCC" uuid="ab883119-0a68-45f9-9cab-42f85e4bc93b"/>
+					<textElement>
+						<font size="7" isBold="true"/>
+					</textElement>
+					<text><![CDATA[       (88) 99970.3700 / 99411.8286]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="125" y="493" width="94" height="14" forecolor="#00CCCC" uuid="82d1d6ef-80ba-4287-9f97-181b7b48a89f"/>
+					<textElement>
+						<font size="7" isBold="true"/>
+					</textElement>
+					<text><![CDATA[        auroclin@hotmail.com]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="33" y="509" width="186" height="14" forecolor="#00CCCC" uuid="85a11ecd-e18d-4a04-bd41-afcc2b682bb5"/>
+					<textElement>
+						<font size="7" isBold="true"/>
+					</textElement>
+					<text><![CDATA[    Travessa Antônio Pinto, 200 - Centro - Aurora - CE]]></text>
+				</staticText>
+				<image>
+					<reportElement x="319" y="487" width="54" height="43" uuid="0c6f9a92-f107-45f5-97e8-a672255216c6"/>
+					<imageExpression><![CDATA["C:\\Users\\Franciosney Souza\\Desktop\\home.jpg"]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement x="262" y="505" width="58" height="8" forecolor="#00CCCC" uuid="b85e2598-1314-4d9c-9be5-39ceb6b3e47d"/>
+					<textElement>
+						<font size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Arquivo Gerado]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="267" y="513" width="44" height="14" forecolor="#00CCCC" uuid="578eecad-ae76-4bb8-b76a-ce94ff3e0260"/>
+					<textElement>
+						<font size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Pelo Sistema]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="244" y="492" width="87" height="7" forecolor="#00CCCC" uuid="8f844bcc-6d16-4744-81d0-3769c789d749"/>
+					<textElement>
+						<font size="5" isBold="true"/>
+					</textElement>
+					<text><![CDATA[www.homesoftsolucoes.com.br]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="251" y="499" width="69" height="7" forecolor="#00CCCC" uuid="b1ac4d24-a633-4e54-b2b5-e5b1022cc899"/>
+					<textElement>
+						<font size="5" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Suporte: (88) 9.9983-4322]]></text>
+				</staticText>
+				<line>
+					<reportElement x="226" y="487" width="1" height="36" forecolor="#00CCCC" uuid="f1b3a22d-4831-4906-bdfa-984a2808d1d3"/>
+				</line>
+				<line>
+					<reportElement x="0" y="483" width="384" height="1" forecolor="#00CCCC" uuid="16c8d2a5-a72f-434f-bcc6-2365c86497b7"/>
+				</line>
+				<rectangle>
+					<reportElement x="1" y="449" width="383" height="20" forecolor="#00CCCC" uuid="e67fb388-2783-4bb5-a6a6-87d0a967a48e"/>
+				</rectangle>
+				<staticText>
+					<reportElement x="60" y="435" width="100" height="14" uuid="aec02e5b-edd1-453e-be65-eb44fbd7d18f"/>
+					<text><![CDATA[Médico:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="36" y="105" width="100" height="14" uuid="f7becbb1-fd33-46bf-8811-8036727f0d0a"/>
+					<text><![CDATA[Paciente:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="201" y="105" width="43" height="14" uuid="23bebb65-5876-49b7-8edf-a75382569542"/>
+					<text><![CDATA[Serviço:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="319" y="105" width="43" height="14" uuid="1c543489-d6d7-4508-b593-c0fb51384c8d"/>
+					<text><![CDATA[Data:]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="5" y="122" width="164" height="15" uuid="33e97dc7-5643-4b76-9523-ffc9523eb4d5"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="179" y="123" width="122" height="14" uuid="95813abd-17f7-454d-a184-e4be39af78ef"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{servico}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="315" y="123" width="69" height="14" uuid="bc30ac8b-cd7c-43e3-b212-d2e11505406b"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{data}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="9" y="152" width="367" height="266" uuid="75fa55ff-8b48-4a30-ab4b-c29133a8618d"/>
+					<textElement textAlignment="Justified">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{receituario}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="9" y="453" width="369" height="14" uuid="9aaadf3d-1686-4e08-8304-7946f5ed631c"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{medico}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+</jasperReport>

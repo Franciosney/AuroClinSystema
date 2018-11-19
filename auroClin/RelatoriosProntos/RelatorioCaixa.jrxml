@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a1d53650-f1ec-4205-bd20-137ac99ea000">
+	<property name="ireport.zoom" value="1.2100000000000009"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="medico" class="java.lang.String"/>
+	<field name="servico" class="java.lang.String"/>
+	<field name="precoTotal" class="java.lang.String"/>
+	<field name="valorPago" class="java.lang.String"/>
+	<field name="valorTerceiro" class="java.lang.String"/>
+	<field name="valorLucro" class="java.lang.String"/>
+	<field name="data" class="java.lang.String"/>
+	<field name="hora" class="java.lang.String"/>
+	<field name="beneficiario" class="java.lang.String"/>
+	<field name="tranzacoes" class="java.lang.String"/>
+	<field name="somaTerceiro" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="83" splitType="Stretch">
+			<image>
+				<reportElement x="4" y="0" width="216" height="77" uuid="28726529-49da-4393-961d-73d4c44c6c14"/>
+				<imageExpression><![CDATA["C:\\Users\\Franciosney Souza\\Desktop\\teste.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="46" splitType="Stretch">
+			<staticText>
+				<reportElement x="196" y="0" width="158" height="35" uuid="788b0c66-38ee-4a12-b28c-bf9cfe89dc0e"/>
+				<textElement>
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[RELATÓRIO]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="24" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="1" width="100" height="20" uuid="89a2c337-9faa-4f0a-b85e-c8b5ae1aad71"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[MÉDICO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="135" y="0" width="61" height="20" uuid="8f3750ad-526a-4a45-bf0c-7959be9fbca1"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[SERVIÇO]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="21" width="555" height="1" uuid="5acd4a38-8c28-41db-9697-bfe4effdcc96"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="231" y="0" width="64" height="20" uuid="6ccdf0d5-021a-4cbc-ac46-70da33090336"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[VAL. PG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="295" y="0" width="66" height="20" uuid="8c7138a1-770a-45be-b164-7733494f4e72"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[VAL. TER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="361" y="0" width="63" height="20" uuid="494298ff-940d-49ef-8e05-0ef6801c56ce"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[DATA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="0" width="100" height="20" uuid="645dd9f3-ad4d-40e6-9748-e33f9c40ec32"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[BENEFICIARIO]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="135" height="20" uuid="4e5c3fbd-69eb-4377-8929-347341d30701"/>
+				<textFieldExpression><![CDATA[$F{medico}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="135" y="0" width="85" height="20" uuid="c1b0f6b0-3c2b-408b-b922-bf9f2d7b0a4a"/>
+				<textFieldExpression><![CDATA[$F{servico}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="231" y="0" width="64" height="20" uuid="b3b417e8-ff1f-45a3-a6be-374174b1eb76"/>
+				<textFieldExpression><![CDATA[$F{valorPago}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="0" width="66" height="20" uuid="1d48acdc-6079-4e65-9341-bcd61a361555"/>
+				<textFieldExpression><![CDATA[$F{valorTerceiro}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="361" y="0" width="69" height="20" uuid="f6d13d66-0dc1-4c3a-96a6-00362ec73b3c"/>
+				<textFieldExpression><![CDATA[$F{data}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="0" width="115" height="20" uuid="c790b969-6026-4193-8a44-b3bea5440e23"/>
+				<textFieldExpression><![CDATA[$F{beneficiario}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<staticText>
+				<reportElement x="198" y="0" width="62" height="20" uuid="8e9f1fe3-3d24-4e13-bdee-d5b115592e33"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Serviços]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="260" y="20" width="35" height="20" uuid="3f8d5dfb-20c9-4c08-a0b9-aafd74d8c515"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tranzacoes}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="186" y="20" width="74" height="20" uuid="85991e0e-37fc-42dd-b489-689582d657c6"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Tranzações:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="440" y="20" width="100" height="20" uuid="ffc13feb-1f36-424d-84b5-1b73c85077dc"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{somaTerceiro}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="295" y="20" width="129" height="20" uuid="b373f3c9-0a35-4d44-8827-a1cc56d047ae"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Pagamento de Terceiro:  ]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="118" splitType="Stretch">
+			<staticText>
+				<reportElement x="226" y="67" width="157" height="13" uuid="6b7d8f90-e858-41c9-9212-68669e99049a"/>
+				<text><![CDATA[Todos os Direitos Reservados]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="226" y="54" width="294" height="13" uuid="b5a12dc4-3098-43ed-9298-f14cef10be00"/>
+				<text><![CDATA[Homesoft Soluções (Desenvolvimento e Locação de Sistemas)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="226" y="80" width="157" height="13" uuid="505d937e-be73-44d1-8a9c-c882711435c5"/>
+				<text><![CDATA[Contato: (88) 9.9983-4322]]></text>
+			</staticText>
+			<image>
+				<reportElement x="10" y="10" width="150" height="95" uuid="a47d9320-1f71-4e98-9598-9e52e2d4e9af"/>
+				<imageExpression><![CDATA["C:\\Users\\Franciosney Souza\\Desktop\\home.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="226" y="41" width="157" height="13" uuid="894e482e-65e1-42b6-8e9d-1927e4eb45b3"/>
+				<text><![CDATA[Arquivo Gerado pelo Sistema]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

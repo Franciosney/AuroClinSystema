@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="425" pageHeight="595" columnWidth="385" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1e2907dc-17f8-4a99-b6ef-1d2d7a1f168c">
+	<property name="ireport.zoom" value="1.1000000000000036"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="94"/>
+	<field name="nome" class="java.lang.String"/>
+	<field name="servico" class="java.lang.String"/>
+	<field name="data" class="java.lang.String"/>
+	<field name="endereco" class="java.lang.String"/>
+	<field name="receituario" class="java.lang.String"/>
+	<group name="reporterEspecial">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band height="555">
+				<rectangle radius="10">
+					<reportElement x="0" y="35" width="187" height="87" uuid="13d25c13-6862-45e6-88e2-34a062fc3f1c"/>
+				</rectangle>
+				<rectangle>
+					<reportElement x="0" y="0" width="385" height="21" backcolor="#333333" uuid="5b9c513c-89d5-4e9f-bee9-b817fc79b8af"/>
+				</rectangle>
+				<staticText>
+					<reportElement x="118" y="3" width="183" height="18" forecolor="#FFFFFF" uuid="6f1e212f-90d7-4123-b3c0-0a34764a56af"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[RECEITUÁRIO CONTROLE ESPECIAL]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="17" y="106" width="162" height="9" forecolor="#000000" uuid="753754b6-be5b-4bde-bc24-3fea2a1b7b85"/>
+					<textElement>
+						<font size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[    Travessa Antônio Pinto, 200 - Centro - Aurora - CE]]></text>
+				</staticText>
+				<line>
+					<reportElement x="8" y="91" width="162" height="1" uuid="1592ad53-c087-4697-9777-77b54324391b"/>
+				</line>
+				<image>
+					<reportElement x="17" y="46" width="162" height="40" uuid="7ce45355-519a-44bc-8812-8566d163c74c"/>
+					<imageExpression><![CDATA["C:\\Users\\Franciosney Souza\\Desktop\\teste\\auroClinPretojPJ.jpg"]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement x="102" y="97" width="68" height="9" forecolor="#000000" uuid="36921b7f-4a35-4c84-9be2-5c67d40e356d"/>
+					<textElement>
+						<font size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[auroclin@hotmail.com]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="17" y="97" width="94" height="8" forecolor="#000000" uuid="ba3f397b-5d0c-4626-a25b-5e613a2783fe"/>
+					<textElement>
+						<font size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[   (88) 99970.3700 / 99411.8286]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="197" y="45" width="144" height="9" forecolor="#000000" uuid="4983b4c2-9559-4950-b3a3-ed4981df548a"/>
+					<textElement>
+						<font size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[2ª Via Orientação ao Paciente]]></text>
+				</staticText>
+				<rectangle radius="10">
+					<reportElement x="197" y="57" width="187" height="64" uuid="7d296592-e391-48c0-8f83-d9ea5481e7dd"/>
+				</rectangle>
+				<staticText>
+					<reportElement x="197" y="35" width="144" height="9" forecolor="#000000" uuid="602deaba-17b4-4280-b59e-fb288f21e85e"/>
+					<textElement>
+						<font size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[1ª Via Retenção da Farmácia ou Drogaria]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="133" y="129" width="120" height="16" forecolor="#000000" uuid="249b6989-d6f8-4bf6-905b-95642b50121e"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[Receituário Especial]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="205" y="62" width="144" height="9" forecolor="#000000" uuid="6aad7d8b-b21d-4f68-8b3b-346bfe405a79"/>
+					<textElement>
+						<font size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Carimbo do Médico]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="55" y="225" width="100" height="14" uuid="d7438559-0fb4-4bd4-b4c3-cc045f3b4ede"/>
+					<text><![CDATA[Prescrição:]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement x="172" y="162" width="125" height="20" forecolor="#000000" uuid="86d39242-2bb0-4b70-a11a-d2bd55271dc8"/>
+				</rectangle>
+				<staticText>
+					<reportElement x="204" y="148" width="43" height="14" uuid="b424059f-9ce7-4084-8037-910720f54829"/>
+					<text><![CDATA[Serviço:]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement x="1" y="200" width="384" height="20" forecolor="#000000" uuid="ee7d7e2e-3678-4dcd-a948-720c14105d9b"/>
+				</rectangle>
+				<staticText>
+					<reportElement x="39" y="148" width="100" height="14" uuid="564db197-4bc0-47c4-af12-23851e2565cb"/>
+					<text><![CDATA[Paciente:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="54" y="186" width="100" height="14" uuid="c3b648f3-d573-49a2-86ab-bcf10ba244b2"/>
+					<text><![CDATA[Endereço:]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement x="1" y="239" width="384" height="177" forecolor="#000000" uuid="ef5b809b-d703-48e8-9bff-4ccf9e2befae"/>
+				</rectangle>
+				<rectangle>
+					<reportElement x="0" y="162" width="168" height="20" forecolor="#000000" uuid="645ae6f7-6c86-4f91-9983-4ba3f2fcdb0d"/>
+				</rectangle>
+				<rectangle>
+					<reportElement x="0" y="448" width="224" height="107" uuid="db456385-4233-4e90-86b7-9e4bbf921393"/>
+				</rectangle>
+				<staticText>
+					<reportElement x="9" y="479" width="27" height="14" uuid="6721ef5f-f54c-4765-a751-527f92e512f6"/>
+					<textElement>
+						<font size="7"/>
+					</textElement>
+					<text><![CDATA[Nome:]]></text>
+				</staticText>
+				<line>
+					<reportElement x="39" y="486" width="174" height="1" uuid="da018aeb-9a2f-4994-9125-d6c3d76f1fa1"/>
+				</line>
+				<line>
+					<reportElement x="10" y="498" width="203" height="1" uuid="a0e49c43-f8f2-4a20-962e-434932e09b9b"/>
+				</line>
+				<staticText>
+					<reportElement x="9" y="499" width="26" height="14" uuid="af1fdcf1-dddf-48da-93d4-d13544e4cc32"/>
+					<textElement>
+						<font size="7"/>
+					</textElement>
+					<text><![CDATA[Ident:]]></text>
+				</staticText>
+				<line>
+					<reportElement x="36" y="506" width="75" height="1" uuid="ded6a749-d31b-443b-9555-6c07f317758f"/>
+				</line>
+				<staticText>
+					<reportElement x="116" y="499" width="52" height="14" uuid="eab904e7-1b89-4d0b-87f6-9004805cacd7"/>
+					<textElement>
+						<font size="7"/>
+					</textElement>
+					<text><![CDATA[òrg. Emissor:]]></text>
+				</staticText>
+				<line>
+					<reportElement x="163" y="507" width="50" height="1" uuid="907597d2-e9da-486f-b3a9-2c15e49ba047"/>
+				</line>
+				<staticText>
+					<reportElement x="10" y="510" width="53" height="14" uuid="5cbfecfd-2c07-4ff3-836c-e88a2173a567"/>
+					<textElement>
+						<font size="7"/>
+					</textElement>
+					<text><![CDATA[Endereço:]]></text>
+				</staticText>
+				<line>
+					<reportElement x="50" y="517" width="163" height="1" uuid="742dde1b-7175-47bc-b64e-8ed5e0585aea"/>
+				</line>
+				<staticText>
+					<reportElement x="9" y="530" width="53" height="14" uuid="d082ee7f-3642-4e85-941e-15e95e0ce8a3"/>
+					<textElement>
+						<font size="7"/>
+					</textElement>
+					<text><![CDATA[Cidade:]]></text>
+				</staticText>
+				<line>
+					<reportElement x="10" y="527" width="204" height="1" uuid="c88ec447-8170-4edc-b524-aadfe710a6ac"/>
+				</line>
+				<line>
+					<reportElement x="40" y="538" width="102" height="1" uuid="cb580731-e53f-4481-941a-cbd7b1789ed7"/>
+				</line>
+				<staticText>
+					<reportElement x="143" y="530" width="12" height="14" uuid="e83ffacc-e336-4a29-b2b5-6a992e640db3"/>
+					<textElement>
+						<font size="7"/>
+					</textElement>
+					<text><![CDATA[UF]]></text>
+				</staticText>
+				<line>
+					<reportElement x="163" y="537" width="51" height="1" uuid="2600ba15-70ea-4f1a-bb69-8faafb46f6b1"/>
+				</line>
+				<staticText>
+					<reportElement x="9" y="541" width="53" height="14" uuid="e381c741-19e7-45db-93e1-b9a7fdefc9fc"/>
+					<textElement>
+						<font size="7"/>
+					</textElement>
+					<text><![CDATA[Telefone:]]></text>
+				</staticText>
+				<line>
+					<reportElement x="43" y="549" width="171" height="1" uuid="4d6250f0-8b7d-44e5-8eb7-a7c5806170cc"/>
+				</line>
+				<rectangle>
+					<reportElement x="11" y="453" width="202" height="16" backcolor="#000000" uuid="d2cd60d1-3c64-4088-8e72-76d308997fc7"/>
+				</rectangle>
+				<staticText>
+					<reportElement x="51" y="457" width="129" height="14" forecolor="#FFFFFF" uuid="d22487f6-1938-4c42-8f61-2c23b75ef5a6"/>
+					<textElement>
+						<font size="7" isBold="true"/>
+					</textElement>
+					<text><![CDATA[IDENTIFICAÇÃO DO COMPRADOR]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement x="229" y="448" width="155" height="107" uuid="d8e36722-1bae-44ef-9ff1-5fd6de17e90b"/>
+				</rectangle>
+				<rectangle>
+					<reportElement x="234" y="453" width="144" height="16" backcolor="#000000" uuid="f29835ac-5884-4a6d-a22c-0a98a448e919"/>
+				</rectangle>
+				<staticText>
+					<reportElement x="245" y="457" width="131" height="14" forecolor="#FFFFFF" uuid="e12c79af-2371-4298-b5b5-1c8476a40a4f"/>
+					<textElement>
+						<font size="7" isBold="true"/>
+					</textElement>
+					<text><![CDATA[IDENTIFICAÇÃO DO FORNECEDOR]]></text>
+				</staticText>
+				<line>
+					<reportElement x="231" y="538" width="85" height="1" uuid="3693347f-bd35-43a2-97e5-6fdd7fa1ef0c"/>
+				</line>
+				<staticText>
+					<reportElement x="234" y="541" width="82" height="14" uuid="9157cb93-cd53-476f-91ef-19ef000cfec7"/>
+					<textElement>
+						<font size="6"/>
+					</textElement>
+					<text><![CDATA[Assinatura do Farmacêutico]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="318" y="531" width="62" height="14" uuid="8f733db1-c499-46b1-a9b8-96ca243c3b66"/>
+					<textElement>
+						<font size="6"/>
+					</textElement>
+					<text><![CDATA[Data: ___/___/______]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement x="301" y="162" width="83" height="20" forecolor="#000000" uuid="f3990af3-b1d0-4228-8167-54553949ad81"/>
+				</rectangle>
+				<staticText>
+					<reportElement x="306" y="148" width="78" height="14" uuid="1997bbed-bab1-48ca-9cd3-cce568bc276e"/>
+					<text><![CDATA[Data Atend.]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="4" y="165" width="166" height="15" uuid="2e32c3c8-fab3-44e7-ac17-db118e0cb72d"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="177" y="165" width="120" height="14" uuid="7b3aa3c7-03c8-4ac0-b438-5669ec5ea942"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{servico}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="309" y="164" width="75" height="15" uuid="e255c68c-cb72-4eb5-871b-95b4e6a812f7"/>
+					<textFieldExpression><![CDATA[$F{data}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="5" y="203" width="379" height="14" uuid="1bf4cef9-f004-4e55-b495-8a859b134829"/>
+					<textFieldExpression><![CDATA[$F{endereco}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="20" y="431" width="148" height="20" uuid="4131a5c0-c580-4d11-a2ef-7f97807fbd4f"/>
+					<text><![CDATA[Data _____/_____/_________]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="9" y="248" width="367" height="157" uuid="2a61e7eb-62a9-4b22-9e9e-5bad1098a63c"/>
+					<textElement textAlignment="Justified"/>
+					<textFieldExpression><![CDATA[$F{receituario}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+</jasperReport>

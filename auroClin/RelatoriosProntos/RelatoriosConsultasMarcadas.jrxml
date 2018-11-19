@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RelatoriosConsultasMarcadas" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a03bca3a-b617-4f40-9e29-406aa761fb74">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="Titulo" class="java.lang.String"/>
+	<field name="Nome" class="java.lang.String"/>
+	<field name="Consulta" class="java.lang.String"/>
+	<field name="data" class="java.lang.String"/>
+	<field name="horario" class="java.lang.String"/>
+	<field name="medico" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<textField>
+				<reportElement x="231" y="25" width="100" height="20" uuid="1c8631d6-8f75-4460-a445-a197b4478bb5"/>
+				<textFieldExpression><![CDATA[$P{Titulo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<staticText>
+				<reportElement x="31" y="22" width="100" height="20" uuid="0869856d-89d1-48f9-8082-5cea4454c8fd"/>
+				<text><![CDATA[Nome]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="31" y="62" width="100" height="20" uuid="418a7e01-9529-487b-ae98-ed919f14b7b4"/>
+				<textFieldExpression><![CDATA[$F{Nome}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="131" y="22" width="100" height="20" uuid="cc851cc4-2ee3-4541-b6cb-2a018ec8e5ff"/>
+				<text><![CDATA[Consulta]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="131" y="62" width="100" height="20" uuid="d37400e2-df0d-4ccf-9ed3-def979094b5a"/>
+				<textFieldExpression><![CDATA[$F{Consulta}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="231" y="22" width="100" height="20" uuid="4adb2c54-1a75-41a8-98d8-e3d2471c0c72"/>
+				<text><![CDATA[data]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="231" y="62" width="100" height="20" uuid="0a07655d-7bae-48fb-a865-673ba8beaf98"/>
+				<textFieldExpression><![CDATA[$F{data}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="331" y="22" width="136" height="20" uuid="e6271351-36e0-45e2-9bb6-5b68ea65ceb0"/>
+				<text><![CDATA[médico]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="467" y="62" width="64" height="20" uuid="6604fca2-b31c-4dce-9d02-cd362c767899"/>
+				<textFieldExpression><![CDATA[$F{horario}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="467" y="22" width="64" height="20" uuid="3b13dcd5-feb4-46b4-936a-14b53d1d96ce"/>
+				<text><![CDATA[forma]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="331" y="62" width="136" height="20" uuid="dc5e891f-7f42-4d77-b7b0-6d36dac31d34"/>
+				<textFieldExpression><![CDATA[$F{medico}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

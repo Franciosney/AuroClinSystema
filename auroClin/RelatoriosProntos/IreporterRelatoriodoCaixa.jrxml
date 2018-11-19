@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7d2cb47d-f540-4a50-a0e4-815e43525a8a">
+	<property name="ireport.zoom" value="1.2100000000000004"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="192"/>
+	<field name="servico" class="java.lang.String"/>
+	<field name="valorPago" class="java.lang.String"/>
+	<field name="formaPaga" class="java.lang.String"/>
+	<field name="vendedor" class="java.lang.String"/>
+	<field name="dataVenda" class="java.lang.String"/>
+	<field name="hora" class="java.lang.String"/>
+	<field name="obs" class="java.lang.String"/>
+	<field name="bruto" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="93" splitType="Stretch">
+			<image>
+				<reportElement x="10" y="10" width="216" height="77" uuid="540e622c-05b2-4a0b-8ae0-4052822ef266"/>
+				<imageExpression><![CDATA["C:\\Users\\Franciosney Souza\\Desktop\\teste.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="174" y="1" width="279" height="35" uuid="dfd874dc-473d-4668-893b-0f7a11338530"/>
+				<textElement>
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[RELATÓRIO DO CAIXA]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="24" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="1" width="100" height="20" uuid="f94ff130-6df0-4682-b365-6e333c8b1f6b"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SERVIÇO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="138" y="1" width="67" height="20" uuid="65e42f92-f6e4-432a-a07a-7592ee5bd87f"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VAL. PG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="205" y="1" width="78" height="20" uuid="db5ed420-5265-4fb4-b940-274722a58fd9"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FORMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="283" y="1" width="100" height="20" uuid="06edc0d0-6e98-4a7f-ac9c-fa1a70d69108"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VENDEDOR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="1" width="71" height="20" uuid="4cc4ccba-1157-4d85-a332-a737dfb585a0"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="488" y="1" width="67" height="20" uuid="425ee146-12f9-4cf1-ad1b-8df22458a238"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[OBS]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="21" width="555" height="1" uuid="b2015800-eceb-4704-9dd1-001ab3633939"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="138" height="20" uuid="a5b228b5-3861-469a-adf3-0b895d091331"/>
+				<textFieldExpression><![CDATA[$F{servico}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="138" y="0" width="67" height="20" uuid="654a248e-b444-4c84-93bc-c74f3aab39bc"/>
+				<textFieldExpression><![CDATA[$F{valorPago}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="205" y="2" width="78" height="20" uuid="2a132a2b-c283-4374-a0a4-3d34404fef39"/>
+				<textFieldExpression><![CDATA[$F{formaPaga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="283" y="2" width="134" height="20" uuid="5e32bc34-9e25-40e2-94e5-76480f1cc7e0"/>
+				<textFieldExpression><![CDATA[$F{vendedor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="2" width="71" height="20" uuid="ab7d8d1a-3ef9-4ea1-932a-ac1a78b2cbb5"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dataVenda}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="488" y="2" width="67" height="20" uuid="69582127-ed9f-4aed-9b04-9ea5a30471f8"/>
+				<textFieldExpression><![CDATA[$F{obs}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="53" splitType="Stretch">
+			<textField>
+				<reportElement x="105" y="22" width="100" height="20" uuid="2cd22feb-1120-44d0-88fd-0e664e6da05d"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bruto}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="3" y="22" width="100" height="20" uuid="018e5841-1bd6-4526-9a73-10451ebce5ba"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VALOR BRUTO:]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="120" splitType="Stretch">
+			<staticText>
+				<reportElement x="240" y="36" width="157" height="13" uuid="97c5be7c-d886-4b7f-aec2-c936071ed5a7"/>
+				<text><![CDATA[Arquivo Gerado pelo Sistema]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="62" width="157" height="13" uuid="0e6d52a5-7e3f-4876-8477-a424b6ce4f97"/>
+				<text><![CDATA[Todos os Direitos Reservados]]></text>
+			</staticText>
+			<image>
+				<reportElement x="24" y="5" width="150" height="95" uuid="b0786acd-a0ee-4a0e-877e-316596bb966f"/>
+				<imageExpression><![CDATA["C:\\Users\\Franciosney Souza\\Desktop\\home.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="240" y="49" width="294" height="13" uuid="48836b53-fbb6-4faa-ae05-7f1566a834dd"/>
+				<text><![CDATA[Homesoft Soluções (Desenvolvimento e Locação de Sistemas)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="75" width="157" height="13" uuid="b8dc482d-0b7a-4c3b-a379-97492d69e3e8"/>
+				<text><![CDATA[Contato: (88) 9.9983-4322]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
